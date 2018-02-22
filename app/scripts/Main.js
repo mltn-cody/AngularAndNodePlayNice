@@ -4,6 +4,7 @@
     require('angular');
     require('angular-route');
     require('angular-animate');
+    require('../controllers/CanvasController');
 
     angular.module('myApp', ['ngRoute', 'ngAnimate'])
     .config([

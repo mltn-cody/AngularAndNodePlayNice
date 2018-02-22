@@ -4,9 +4,9 @@
     require('angular');
     require('angular-route');
     require('angular-animate');
-    require('../controllers/CanvasController');
+    var canvasCtrl = require('../controllers/CanvasController');
 
-    angular.module('myApp', ['ngRoute', 'ngAnimate'])
+    var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate'])
     .config([
         '$locationProvider',
         '$routeProvider',
@@ -22,5 +22,5 @@
                     redirectTo: '/'
                 });
         }
-    ]);
+    ]).controller('CanvasController', ['$scope', canvasCtrl]);;
 }());

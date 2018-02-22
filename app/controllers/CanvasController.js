@@ -2,8 +2,7 @@
     'use strict';
     require('jquery');
     require('angular');
-    Console.Write(myApp);
-    myApp.controller('CanvasController', ['$scope', '$document', function($scope, $document) {
+    module.exports =  function($scope, $document) {
         var canvas = $('#canvas');
         var ctx = canvas.getContext("2d");
         var w = $("#canvas").width();
@@ -153,6 +152,5 @@
             else if(key == "39" && d != "left") d = "right";
             else if(key == "40" && d != "up") d = "down";
             //The snake is now keyboard controllable
-        });
-    }]);
+        }); };
  }());

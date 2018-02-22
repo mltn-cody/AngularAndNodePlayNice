@@ -1,8 +1,7 @@
 (function () {
-    'use strict';
-    require('jquery');
-    require('angular');
+
     module.exports =  function($scope, $document) {
+        var $ = require('jquery');
         var canvas = $('#canvas');
         var ctx = canvas.getContext("2d");
         var w = $("#canvas").width();

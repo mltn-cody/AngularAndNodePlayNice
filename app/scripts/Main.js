@@ -22,5 +22,5 @@
                     redirectTo: '/'
                 });
         }
-    ]).controller('CanvasController', ['$scope', canvasCtrl]);;
+    ]).controller('CanvasController', ['$scope','$document', canvasCtrl]);
 }());

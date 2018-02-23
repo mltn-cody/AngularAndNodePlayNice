@@ -1,8 +1,12 @@
 (function () {
 
     module.exports =  function($scope, $document) {
+        // why doesn't jquery work here?
+        // what is different about angulars document?
         var $ = require('jquery');
-        var canvas = $('#canvas');
+
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
         var ctx = canvas.getContext("2d");
         var w = $("#canvas").width();
         var h = $("#canvas").height();  
